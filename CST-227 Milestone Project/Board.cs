@@ -17,7 +17,6 @@ namespace CST_227_Milestone_Project
 		public Cell[,] Grid { get; set; }
 
 		//constructor
-
 		public Board(int s)
 		{
 			//set initial size of board as s
