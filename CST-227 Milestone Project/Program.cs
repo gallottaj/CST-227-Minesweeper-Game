@@ -1,31 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 //Joey Gallotta
 //CST-227 Milestone Project
 
 namespace CST_227_Milestone_Project
 {
-	class Program
-	{
-		//create instance of Board 
-		static Board b = new Board(45);
-        static BoardService boardService;
-        static Game g = new Game();
-        static GameService gameService;
+    internal class Program
+    {
+        //create instance of Board 
+        private static readonly Board Board = new Board(45);
+        private static BoardService _boardService;
+        private static readonly Game Game = new Game();
+        private static GameService _gameService;
 
-		public static void Main(string[] args)
-		{
+        public static void Main(string[] args)
+        {
             //print empty game board
-            boardService = new BoardService(b);
-            boardService.printBoard();
-            boardService.countBombsNearCells();
+            _boardService = new BoardService(Board);
+            _boardService.printBoard();
+            _boardService.countBombsNearCells();
             Console.ReadLine();
-            gameService.GameLoop();
+            _gameService = new GameService(Game,Board);
+            _gameService.GameLoop();
         }
     }
 }

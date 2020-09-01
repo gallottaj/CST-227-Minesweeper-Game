@@ -1,32 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CST_227_Milestone_Project
 {
-    class GameService
+    internal class GameService
     {
-        public Game g;
-        public Board b;
+        public Board Board;
+        public Game Game;
+
+        public GameService(Game game, Board board)
+        {
+            Game = game;
+            Board = board;
+        }
 
         public void GameLoop()
         {
-            g.gameOver = false;
-            
-            while (g.gameOver == false)
+            Game.gameOver = false;
+
+            while (Game.gameOver == false)
             {
                 Console.WriteLine("Enter row number");
-                int currentRow = int.Parse(Console.ReadLine());
+                var currentRow = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Enter column number");
-                int currentColumn = int.Parse(Console.ReadLine());
+                var currentColumn = int.Parse(Console.ReadLine());
 
-                Console.WriteLine(b.Grid[currentRow, currentColumn]);
+                Console.WriteLine(Board.Grid[currentRow, currentColumn]);
                 break;
             }
+
             Console.WriteLine("Game over");
         }
     }
