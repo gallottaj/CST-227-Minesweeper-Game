@@ -49,6 +49,8 @@
     <Compile Include="CellService.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameService.cs" />
+    <Compile Include="PlayerStats.cs" />
+    <Compile Include="PlayerStatsService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

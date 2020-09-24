@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST-227 Milestone Project",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6EF021FD-1BC2-49BF-86B0-8D6EFCE7C4B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper GUI", "Minesweeper GUI\Minesweeper GUI.csproj", "{9E015357-30BC-4927-9A18-B12CBFECA48B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessBoardGUIApp", "..\ChessBoardGUIApp\ChessBoardGUIApp\ChessBoardGUIApp.csproj", "{33ED339D-159D-42A6-B25B-0EB46A96F804}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{B4FF2D9F-7E8E-4ABA-B508-40D530DB2243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4FF2D9F-7E8E-4ABA-B508-40D530DB2243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4FF2D9F-7E8E-4ABA-B508-40D530DB2243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E015357-30BC-4927-9A18-B12CBFECA48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E015357-30BC-4927-9A18-B12CBFECA48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E015357-30BC-4927-9A18-B12CBFECA48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E015357-30BC-4927-9A18-B12CBFECA48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33ED339D-159D-42A6-B25B-0EB46A96F804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33ED339D-159D-42A6-B25B-0EB46A96F804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33ED339D-159D-42A6-B25B-0EB46A96F804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33ED339D-159D-42A6-B25B-0EB46A96F804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
